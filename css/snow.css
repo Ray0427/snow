@@ -1,0 +1,12 @@
+/*Simple reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	/*You can use any kind of background here.*/
+	/*background: #6b92b9;*/
+	background-image: url(http://ray0427.github.io/snow/snowCard.jpg);
+	background-size: 100% 100%;
+}
+canvas {
+	display: block;
+}
