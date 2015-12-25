@@ -39,3 +39,7 @@ canvas {
 	right: 0;
 	margin: auto;
 }
+.animated{
+	-vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+}
