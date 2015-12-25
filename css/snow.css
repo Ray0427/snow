@@ -1,12 +1,41 @@
 /*Simple reset*/
-* {margin: 0; padding: 0;}
 
-body {
-	/*You can use any kind of background here.*/
-	/*background: #6b92b9;*/
-	background-image: url(http://ray0427.github.io/snow/snowCard.jpg);
-	background-size: 100% 100%;
+* {
+    margin: 0;
+    padding: 0;
 }
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body {
+    /*You can use any kind of background here.*/
+    /*background: #6b92b9;*/
+    background-image: url(../img/background.jpg);
+    background-size: 100% 100%;
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../img/background-HD.jpg);
+        background-size: 100% 100%;
+    }
+}
+
 canvas {
-	display: block;
+	position: absolute;
+    display: block;
+}
+.container{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+img{
+	position: absolute;
+	max-height: 100%;
+	max-width: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
