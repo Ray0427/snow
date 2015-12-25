@@ -22,12 +22,15 @@ a {
 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
 
-@-webkit-keyframes snow {
+/*@-webkit-keyframes snow {
 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
  50% {background-color:#b4cfe0;}
  100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6b92b9;}
+}*/
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px; }
 }
-
 @-ms-keyframes snow {
 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
  100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
@@ -36,9 +39,12 @@ a {
 
 #snow{
 	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
 	height: 100%;
 	width: 100%;
-			max-width: 500px;
+	max-width: 500px;
 
 	/*background-color: #6b92b9; */
 	background-image: url('snow.png'), url('snow3.png'), url('snow2.png');
@@ -49,15 +55,25 @@ a {
 	animation: snow 20s linear infinite;
 }
 #container {
+	background-position: center;
 	background-image: url('snowCard.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
 	width: 100%;
+	transition: 0.6s;
+
+}
+#container:hover{
+	transform: rotateY(180deg);
 }
 body{
 	background-color: black;
 		max-width: 500px;
+		position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
 
 }
 /*#container {
